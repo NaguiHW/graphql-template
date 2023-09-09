@@ -9,7 +9,13 @@ This is based in the following requirements:
 
 ## Remember
 - Generate your own `master.key` and `credentials.yml.enc`
+```bash
+rails credentails:edit
+```
 - In `credentials.yml.enc` add your own `secret_key_base` and `devise_jwt_secret_key`
+```bash
+EDITOR="code --wait" rails credentials:edit
+```
 
 ## Setup
 
