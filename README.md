@@ -1,24 +1,20 @@
-# README
+# Graphql API with Devise authentication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple example of a Graphql API with Devise authentication.
 
-Things you may want to cover:
+## Requirements
+This is based in the following requirements:
+- Ruby 3.2.2
+- Rails 7.0.7
 
-* Ruby version
+## Remember
+- Generate your own `master.key` and `credentials.yml.enc`
+- In `credentials.yml.enc` add your own `secret_key_base` and `devise_jwt_secret_key`
 
-* System dependencies
+## Setup
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+bundle install
+rails db:create db:migrate
+rails s
+```
