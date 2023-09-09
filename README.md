@@ -7,7 +7,8 @@ This is based in the following requirements:
 - Ruby 3.2.2
 - Rails 7.0.7
 
-## Remember
+## Important
+- We are using the port: `8000` intead of `3000`
 - Generate your own `config/master.key` and `config/credentials.yml.enc`
 ```bash
 EDITOR="code --wait" rails credentials:edit
